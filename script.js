@@ -1,5 +1,5 @@
 const button = document.querySelector('.btn');
-const url = "https://apps.midinnings.io/webhook-test/location-id"
+const url = "https://apps.midinnings.io/webhook/location-id"
 
 const sendData = () => {
     const locationId = document.querySelector('input').value

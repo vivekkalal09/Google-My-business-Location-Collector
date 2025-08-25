@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
-    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -8,46 +10,92 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: rgb(138, 208, 255);
 }
 
 .container {
-    background-color: rgb(93, 0, 253);
-    width: 30%;
-    max-width: 400px;
-    min-width: 280px;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    min-height: 70%;
+    min-width: 40%;
+    color: #1B56FD;
+    /* border-color: black; */
     padding: 50px 50px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 50px;
     gap: 10px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 24px rgba(27, 86, 253, 0.3);
     box-sizing: border-box;
+
 }
 
 input {
-    width: 100%;
-    height: 40px;
+    width: 70%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 24px rgba(0, 55, 255, 0.3);
-    outline: auto;
+    border-radius: 50px;
+    border-color: #1B56FD;
+    box-shadow: 0 4px 24px rgba(0, 55, 255, 0.1);
     box-sizing: border-box;
+    font-size: large;
+    color: #1B56FD;
 
 }
 
+input:focus {
+    border-color: #1B56FD;
+    /* blue border */
+    box-shadow: 0 0 0 3px rgba(27, 86, 253, .3);
+    /* glow effect */
+    outline: none;
+    /* removes default outline */
+}
+
+input::placeholder {
+    color: #abc1ff;
+}
+
+
+.heading p {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .btn {
+    font-family: 'Roboto', sans-serif;
     margin-top: 15px;
     width: 70%;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 20px 20px;
     font-size: 20px;
+    border: none;
+    box-shadow: 0 0 0 3px rgba(185, 202, 246, 0.3);
+    background-color: #1B56FD;
+    color: white;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     color: white;
     background-color: blue;
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo img {
+    max-width: 50%;
+    height: auto;
+    display: block;
 }
